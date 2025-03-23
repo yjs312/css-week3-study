@@ -7,7 +7,8 @@
 
 ## 📁 파일 구조
 
-paper&pen/ # 실습 3 : 문구점 정적 쇼핑물 만들기기
+<pre><code> ``` 
+paper&pen/ # 실습 3: 문구점 정적 쇼핑몰 만들기 
     ├── images/ # 상품 이미지 폴더 │ 
         ├── img_note.png │ 
         ├── img_pen.png │ 
@@ -15,7 +16,8 @@ paper&pen/ # 실습 3 : 문구점 정적 쇼핑물 만들기기
     ├── index.html # 메인 페이지 (홈) 
     ├── style.css # 외부 스타일시트 
 ├── responsive-cards.html # 실습 2: 반응형 카드 레이아웃 
-└── style-practice-01.html # 실습 1: 인라인 스타일 적용
+└── style-practice-01.html # 실습 1: 인라인 스타일 적용 
+``` </code></pre>
 
 
 ---
