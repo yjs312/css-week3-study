@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>실습 2 - 반응형 카드 레이아웃</title>
+  <style>
+    body {
+      font-family: '맑은 고딕', sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #f8f9fa;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1e90ff;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* 반응형 - 화면이 768px 이하일 때 카드 세로 정렬 */
+    @media (max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>반응형 카드 레이아웃</h1>
+
+  <div class="card-container">
+    <div class="card">
+      <h2>운동 A</h2>
+      <p>MBTI 유형에 따라 추천된 운동입니다.</p>
+    </div>
+    <div class="card">
+      <h2>운동 B</h2>
+      <p>내 위치 근처에서 가능한 운동 코스.</p>
+    </div>
+    <div class="card">
+      <h2>운동 C</h2>
+      <p>운동과 관련된 팁과 정보 제공!</p>
+    </div>
+  </div>
+
+</body>
+</html>
